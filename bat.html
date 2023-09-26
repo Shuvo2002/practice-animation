@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat</title>
+    <style>
+        .feild{
+            border: 1px solid;
+        }
+        .bat{
+            transition: transform 0.2 ease-in;
+        }
+        .feild:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 25px;
+            position: relative;
+            left: 513px;
+            transition: 1s ease-out 0.3s;
+        }
+        .feild:hover .ball{
+            transform: translate(1000px, -100px);
+        }
+        .header{
+            display: flex;
+            
+            
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            margin-left: 20px;
+            color: green;
+            font-size: 20px;
+        }
+        a:hover{
+            padding: 5px;
+            background: skyblue;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<header>
+    <div class="header"><ul>
+    <a href="index.html">Animation</a>
+    <a href="bat.html">bat</a>
+    <a href="transition.html">transition</a>
+    </ul></div>
+</header>
+<body>
+    <div class="feild">
+        <img class="bat" src="images/bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

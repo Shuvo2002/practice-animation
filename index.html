@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes sliding {
+            0%{
+                background: yellow;
+                left: 0;
+                top: 0;
+            }
+            25%{
+                top: 225px;
+                background: red;
+                transform: scale(0.5);
+            }
+            50%{
+                top:0px;
+                background: yellow;
+                transform: scale(1);
+            }
+            75%{
+                top: 225px;
+                background: red;
+                transform: scale(0.5);
+            }
+            100%{
+                background: yellow;
+                left: 400px;
+            }
+            
+        }
+        .stage{
+            width: 500px;
+            height: 300px;
+            background: lightskyblue;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background: limegreen;
+            border-radius: 50%;
+            position: relative;
+            animation: sliding 2s ease-in-out 0.5s  infinite alternate;
+            animation-play-state: running;
+        }
+        .header{
+            display: flex;
+            
+            
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            margin-left: 20px;
+            color: green;
+            font-size: 20px;
+        }
+        a:hover{
+            padding: 5px;
+            background: skyblue;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<header>
+    <div class="header"><ul>
+    <a href="index.html">Animation</a>
+    <a href="bat.html">bat</a>
+    <a href="transition.html">transition</a>
+    </ul></div>
+</header>
+<body>
+    <h1>Lets explore animation</h1>
+    <div class="stage">
+        <div class="ball">
+        </div>
+    </div>
+</body>
+</html>
